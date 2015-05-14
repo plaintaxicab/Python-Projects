@@ -1,0 +1,126 @@
+print ("""You have opened a Choose Your Own Adventure story. You must now complete it...or else.
+This is a tale of great danger, and it could end in great triumph or great failure. The choice is yours. """)
+
+print ("""You're in your bedroom doing homework one evening, just like you always do.
+The sun is setting around the same time it usually does.
+Your beloved pet bird...um....ah...""")
+
+bird_name = input ("I seem to have forgotten the bird's name. What is it again? ")
+
+print ("""Ah, yes. I remember now. %s. Anyway, your beloved pet bird, %s, is chirping, just like always.
+But suddenly, she stops chirping. You look up, mildly concerned. And %s begins to speak.""" %(bird_name, bird_name, bird_name))
+
+print ("""However, she only gets out a few sentences before you burst out laughing. She has the voice of Morgan Freeman. She
+gives you what you assume is the death glare of a bird. 'Yes, I know my voice is strange coming from a small bird like me. Get over it.'
+'Anyway, I'm revealing my true self to you in order to warn you of grave danger. You see, I come from Ornithopia, a planet consisting entirely of birds.
+And we need your help. Our king Ornitharchos has gone insane and is threatening to destroy both Earth and Ornithopia 3 days from now.
+To return him to his normal state, he needs to drink a potion. A potion that only you can gather the ingredients for.'  
+At this point, you have two options. Run or stay and find out more. Which do you choose?""")
+
+answer_1 = input ("Do you run or stay? ")
+answer_1 = answer_1.lower() 
+if answer_1 == "stay":
+    print ("'Why am I the only one who can gather the ingredients?' you say.")
+    print ("""'Honestly, it's because birds don't have thumbs and you're the first person we thought of. 
+But still. It's got to be you. Do you accept?' %s replies.""" %(bird_name))
+
+    answer_2 = input ("Do you accept? ")
+    answer_2 = answer_2.lower()
+    if answer_2 == "yes" or answer_2 == "y":
+       print ("'Good. Follow me.' says %s." %(bird_name))
+       print ("""You follow %s outside. She stops in front of the woods behind your house.
+'Okay, so about this potion.' %s says. 'You have to get the ingredients from my world.
+You need a fruit from the top of the Zuhaitz tree in the Ornithopia forest. It's the tallest one.
+You also need crushed petals from a Lorea flower. They grow in caves and are very poisonous. Be careful.
+The last thing is a tail feather from the Sleeping Peacock. If you wake him, he will kill you.""" %(bird_name, bird_name))
+
+       answer_3 =  input ("This is going to be very dangerous. Do you still want to do this? ")
+       answer_3 = answer_3.lower()
+       if answer_3 == "yes" or answer_3 == "y":
+           print ("""Okay. You can get to Ornithopia by canoeing down the river. There's a fork in the river marked by a
+large pointy rock. If you go left at the fork, you will be transported.""")
+           print ("""'But I have to warn you,' %s says. 'There are monsters in the woods and in the river who will try to prevent you from getting to Ornithopia. They feast on destruction and despair. Avoid them.’
+She hands you a paper. 'This has all your instructions. Good luck.'""" %(bird_name))
+           print ("""You’ve been rowing down the river, looking for the fork, for about 30 minutes, when suddenly something (a tentacle?!) reaches into your
+canoe and grabs you. It pulls you under the water. You are taken to small cell filled with air at the bottom of the river.
+Waiting for you is a gigantic with a human head. 'Hello, young human,' it says. You blink rapidly a few times.
+'My kind are close allies with the radicals of Ornithopia. The ones that want you to fail on your mission.
+We have instructions to only let you pass if you can answer my riddle. So here it is: 'I have a head but no body, a heart but no blood.
+Just leaves and no branches, I grow without wood.'""")
+           answer_4 = input ("What am I? ")
+           answer_4 = answer_4.lower()
+           if answer_4 == "lettuce":
+                  print ("""'Good!' the fish sings. You shiver a little. 'You have proved yourself. I will transport you to Ornithopia myself.'
+Without another word, light flashes all around you and then you’re not in the river anymore. You’re standing in a field. This must be Ornithopia.""")
+                  print ("""You figure you need to get the first thing on the list. You can see the tallest tree in the forest from where you’re standing.
+You go to it. Once you’re there, you realize that the fruit is too high up to simply grab it. You’ll have to climb the tree. However, it looks flimsy enough that you could maybe get some fruit to fall by shaking it.
+Do you shake the tree or try to climb it?""")
+
+                  answer_5 == input ("Which do you choose? (shake/climb)")
+                  if answer_5 == "shake":
+                      print ("""You grab a low hanging branch and start to shake the tree. Before too long, some fruit starts to fall.
+One of them lands directly on top of your head. It makes a sickening noise when it hits you. You black out. You never wake up.""")
+                      print ("End")
+
+                  elif answer_5 == "climb":
+                      print ("""You hoist yourself up onto the lowest branch. The lowest fruit is a few feet above your head.
+Luckily, you’ve climbed many trees before, and you grab the fruit without too much trouble. It’s heavy, and about the size of a softball, with a hard outer shell.""")
+                      print ("""You move on to the next item, the cave flower.
+You wonder how it’s possible for a flower to grow without sunlight, but then you remember you’re getting items to make a potion for an insane bird king
+who’s going to destroy the world. The flower that you’re looking for is highly poisonous, and it could easily kill you. You go to the caves.
+You enter one, and find flowers that fit %s’s description. You're standing in the cave when you hear a noise behind you. You turn around and find that
+it's a bird. It asks what you're doing.""")
+
+
+                      answer_6 = input("Do you lie or tell the truth? (truth/lie)")
+                      if answer_6 == "truth":
+                          print ("""You tell the bird your story. It watches you closely the whole time. When you finish, it stares at you.
+Then, it screeches and flies at you, talons first. It lands on your face and pecks out your eyeballs. It lacerates your face and upper body and leaves you
+in the cave to die. Which is what you do.""")
+                          print ("End")
+                      elif answer_6 == "lie":
+                          print ("""You tell the bird you're looking for flowers for your friend %s. It says, 'Well, you know, the flowers here are very
+poisonous. I wouldn't want you to hurt yourself. Here, let me get that for you.' It picks the flower with its beak and shows you how to hold it safely.
+You both leave.""" %(bird_name))
+                          print ("You get all of the other components for the potion. When it is given to Ornitharchos, he immediately is back to his old self. Reconstruction begins. You return home, forever changed.")
+
+                      else:
+                          print ("Sorry, that wasn't one of the options. Try again!")
+
+
+                  else:
+                      print ("Sorry, that wasn't one of the options. Try again!")
+       else:
+                  print ("""‘No, I’m afraid that’s not it,’ the fish says darkly. It almost smiles. ‘You know what that means, don’t you?’
+It moves toward you and bares its teeth. Its sharp, glistening teeth. The teeth that are the last thing you ever see.""")
+                  print ("End")
+                      
+
+
+    elif answer_3 == "no" or answer_3 == "n":
+                print ("""You slowly back away from %s. You sprint to your car. You get in and drive to the nearest mental hospital.
+You check yourself in, and for three days everything is fine. But on the third day, suddenly you hear evil bird cackling. Then you feel the fire.
+Earth is completely destroyed by fire. Everyone dies. Your last thought is, '%s was right. I could have stopped this.' But it's too late.""" %(bird_name, bird_name))
+	
+
+
+    elif answer_2 == "no" or answer_2 == "n":
+        print ("""You slowly back away from %s. After you exit the room, you sprint to your car. You get in and drive to the nearest mental hospital.
+You check yourself in, and for three days everything is fine. But on the third day, suddenly you hear evil bird cackling. Then you feel the fire.
+Earth is completely destroyed by fire. Everyone dies. Your last thought is, '%s was right. I could have stopped this.' But it's too late.""" %(bird_name, bird_name))
+        print ("End")
+
+
+    else:
+        print ("Sorry, that wasn't a valid answer. Try again.")
+
+
+elif answer_1 == "run":
+    print ("""You slowly back away from %s. After you exit the room, you sprint to your car. You get in and drive to the nearest mental hospital.
+You check yourself in, and for three days everything is fine. But on the third day, suddenly you hear evil bird cackling. Then you feel the fire.
+Earth is completely destroyed by fire. Everyone dies. Your last thought is, '%s was right. I could have stopped this.' But it's too late.""" %(bird_name, bird_name))
+    print ("End")
+
+
+else:
+    print ("Sorry, that wasn't a valid answer. Try again.")
