@@ -1,0 +1,14 @@
+import random
+
+first_name = ["Lark", "Raven", "Esmeralda", "Echo", "Quintessance", "Aurelia",
+                   "Greige", "Ara", "Feather", "October", "River", "Onyx", "Leo", "Lochlann", "Merce"]
+middle_name = ["Violet", "Ebony", "Dune", "Topaz", "Wren", "Electra", "Snow", "Ember",
+                    "Quill", "Starling", "Cobalt", "Damarian", "Sage", "Hawke", "Ice"]
+last_name = ["Caldwell", "Maverick", "Cunningham", "Lawrence", "Magnuson", "Farris", "Vladamire",
+                  "Dreygon", "Benoit", "Atwood", "Coltrane", "Arrington", "Devereaux", "Glass", "Lightwood"]
+ran1 = random.choice(first_name)
+ran2 = random.choice(middle_name)
+ran3= random.choice(last_name)
+
+print ("%s %s %s" %(ran1, ran2, ran3))
+
