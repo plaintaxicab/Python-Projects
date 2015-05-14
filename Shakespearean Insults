@@ -1,0 +1,20 @@
+import random
+
+list1 = ["Thou", "Thy mother was a", "Thou resemble a"]
+
+list2 = ["artless", "beslubbering", "clouting", "impertinent", "saucy", "poisonous", "fishified",
+         "wart-necked", "misbegotten", "paunchy", "puking", "rank", "rougish", "bootless", "lumpish"]
+list3 = ["beef-witted", "flap-mouthed", "half-faced", "rough-hewn", "toad-spotted", "whoreson",
+         "rampallion", "unwash'd", "weather-bitten", "plume-plucked", "pox-marked", "onion-eyed", "beetle-headed", "clay-brained", "base-court"]
+list4 = ["bladder", "canker-blossom", "foot-licker", "fustilarian", "giglet", "harpy", "maggot-pie",
+         "miscreant", "strumpet", "moldwarp", "death-token", "pignut", "horn-beast", "whey-face", "measle"]
+
+part1 = random.choice(list1)
+part2 = random.choice(list2)
+part3 = random.choice(list3)
+part4 = random.choice(list4)
+
+print ("%s %s %s %s!" %(part1, part2, part3, part4))
+
+
+with ("insults.txt", "r+") as my_file
