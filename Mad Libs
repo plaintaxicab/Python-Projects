@@ -1,0 +1,18 @@
+my_file = open("nataliehorstman.txt", "w")
+print ("Welcome to my Mad Lib program")
+
+name = input ("Please enter a name ")
+plural_noun = input ("Please enter a plural noun ")
+adjective1 = input ("Please enter an adjective ")
+adjective2 = input ("Please enter an adjective ")
+building = input ("Please enter a type of building ")
+noun = input ("Please enter a noun ")
+#the they pronoun is used as a gender neutral singular pronoun
+result = (""" %s is on the run from a group of %s. They are very %s.
+       They finally stop at a %s %s. They hope that they can take shelter there. They walk inside and are greeted by a %s.""" %(name, plural_noun, adjective1, adjective2, building, noun))
+print(result)
+input()
+
+
+my_file.write(result)
+my_file.close()
